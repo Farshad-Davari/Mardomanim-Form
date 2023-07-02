@@ -1,71 +1,112 @@
-const submit = document.querySelector("#submit_form");
-const form = document.querySelector("#form");
+// submit form varaibles
+let submit = document.querySelector("#submit_form");
+let form = document.querySelector("#form");
 
-const institution_name = document.querySelector("[name= institution_name]");
-const institution_website = document.querySelector("[name= institution_website]");
-const license_number = document.querySelector("[name= license_number]");
-const issue_date = document.querySelector("[name= issue_date]");
-const institution_head = document.querySelector("[name= institution-head]");
-const meli_code = document.querySelector("[name= meli_code]");
-const phone_number = document.querySelector("[name= phone_number]");
-const institution_address = document.querySelector("[name= institution_address]");
-const state = document.querySelector("[name= state]");
-const city = document.querySelector("[name= city]");
-const institution_landline = document.querySelector("[name= institution_landline]");
-const birth_location = document.querySelector("[name= birth_location]");
-const agent_address = document.querySelector("[name= agent_address]");
-const agent_state = document.querySelector("[name= agent_state]");
-const agent_city = document.querySelector("[name= agent_city]");
-const agent_phone = document.querySelector("[name= agent_phone]");
-const trusted_name = document.querySelector("[name= trusted_name]");
-const male = document.querySelector("[name= male]");
-const female = document.querySelector("[name= female]");
-const birth_certificate = document.querySelector("[name= birth_certificate]");
-const day = document.querySelector("[name= day]");
-const month = document.querySelector("[name= month]");
-const year = document.querySelector("[name= year]");
-const meli_code_second = document.querySelector("[name= meli_code_second]");
-const religion = document.querySelector("[name= religion]");
-const single = document.querySelector("[name= single]");
-const child_numbers = document.querySelector("[name= child_numbers]");
-const phone_number_second = document.querySelector("[name= phone_number_second]");
-const email = document.querySelector("[name= email]");
-const whatsapp_number = document.querySelector("[name= whatsapp_number]");
-const emergency_number = document.querySelector("[name= emergency_number]");
-const job = document.querySelector("[name= job]");
-const service_location = document.querySelector("[name= service_location]");
-const month_income = document.querySelector("[name= month_income]");
-const web = document.querySelector("[name= web]");
-const android = document.querySelector("[name= android]");
-const telegram = document.querySelector("[name= telegram]");
-const software = document.querySelector("[name= software]");
-const benefactor = document.querySelector("[name= benefactor]");
-const connection = document.querySelector("[name= connection]");
-const connetction_to_mardomanim = document.querySelector("[name= connetction_to_mardomanim]");
-const how_many_years = document.querySelector("[name= how_many_years]");
-const how_to_find = document.querySelector("[name= how_to_find]");
-const subjects = document.querySelector("[name= subjects]");
-const resources = document.querySelector("[name= resources]");
-const how_much = document.querySelector("[name= how_much]");
-const any_comments = document.querySelector("[name= any_comments]");
-const first_person_name = document.querySelector("[name= first_person_name]");
-const second_person_name = document.querySelector("[name= second_person_name]");
-const first_person_phone = document.querySelector("[name= first_person_phone]");
-const second_person_phone = document.querySelector("[name= second_person_phone]");
-const first_person_job = document.querySelector("[name= first_person_job]");
-const second_person_job = document.querySelector("[name= second_person_job]");
-const first_person_address = document.querySelector("[name= first_person_address]");
-const second_person_address = document.querySelector("[name= second_person_address]");
-const first_person_relate = document.querySelector("[name= first_person_relate]");
-const second_person_relate = document.querySelector("[name= second_person_relate]");
-const person_name = document.querySelector("[name= person_name]");
-const person_info = document.querySelector("[name= person_info]");
-const institution_agent = document.querySelector("[name= institution_agent]");
-const this_person = document.querySelector("[name= this_person]");
-const in_date = document.querySelector("[name= in_date]");
-const mardomanim = document.querySelector("[name= mardomanim]");
-const benefactor_limit = document.querySelector("[name= benefactor_limit]");
+// input tags variables
+let institution_name = document.getElementById("institution_name");
+let institution_website = document.getElementById("institution_website");
+let license_number = document.getElementById("license_number");
+let issue_date = document.getElementById("issue_date");
+let institution_head = document.getElementById("institution_head");
+let meli_code = document.getElementById("meli_code");
+let phone_number = document.getElementById("phone_number");
+let institution_address = document.getElementById("institution_address");
+let state = document.getElementById("state");
+let city = document.getElementById("city");
+let institution_landline = document.getElementById("institution_landline");
+let trusted_name = document.getElementById("trusted_name");
+let birth_certificate = document.getElementById("birth_certificate");
+let birth_location = document.getElementById("birth_location");
+let day = document.getElementById("day");
+let month = document.getElementById("month");
+let year = document.getElementById("year");
+let meli_code_second = document.getElementById("meli_code_second");
+let religion = document.getElementById("religion");
+let child_numbers = document.getElementById("child_numbers");
+let phone_number_second = document.getElementById("phone_number_second");
+let email = document.getElementById("email");
+let whatsapp_number = document.getElementById("whatsapp_number");
+let emergency_number = document.getElementById("emergency_number");
+let job = document.getElementById("job");
+let service_location = document.getElementById("service_location");
+let month_income = document.getElementById("month_income");
+let address = document.getElementById("address");
+let agent_state = document.getElementById("agent_state");
+let agent_city = document.getElementById("agent_city");
+let agent_phone = document.getElementById("agent_phone");
+let software = document.getElementById("software");
+let mardomanim = document.getElementById("mardomanim");
+let benefactor = document.getElementById("benefactor");
+let benefactor_limit = document.getElementById("benefactor_limit");
+let connetction_to_mardomanim = document.getElementById("connetction_to_mardomanim");
+let how_many_years = document.getElementById("how_many_years");
+let how_to_find = document.getElementById("how_to_find");
+let subjects = document.getElementById("subjects");
+let resources = document.getElementById("resources");
+let how_much = document.getElementById("how_much");
+let any_comments = document.getElementById("any_comments");
+let first_person_name = document.getElementById("first_person_name");
+let second_person_name = document.getElementById("second_person_name");
+let first_person_phone = document.getElementById("first_person_phone");
+let second_person_phone = document.getElementById("second_person_phone");
+let first_person_job = document.getElementById("first_person_job");
+let second_person_job = document.getElementById("second_person_job");
+let first_person_address = document.getElementById("first_person_address");
+let second_person_address = document.getElementById("second_person_address");
+let first_person_relate = document.getElementById("first_person_relate");
+let second_person_relate = document.getElementById("second_person_relate");
+let person_name = document.getElementById("person_name");
+let person_info = document.getElementById("person_info");
+let institution_agent = document.getElementById("institution_agent");
+let this_person = document.getElementById("this_person");
+let in_date = document.getElementById("in_date");
 
+// radio button for gender
+let gender;
+function onCheckGender(data) {
+    if(data.checked) {
+        gender = data.value;
+    }
+}
+
+// radio button for marriage
+let marriage;
+function onCheckMarraige(data) {
+    if(data.checked) {
+        marriage = data.value;
+    }
+}
+
+// radio button for web
+let web;
+function onCheckWeb(data) {
+    if(data.checked) {
+        web = data.value;
+    }
+}
+
+// radio button for android
+let android;
+function onCheckAndroid(data) {
+    if(data.checked) {
+        android = data.value;
+    }
+}
+
+// radio button for telegram
+let telegram;
+function onCheckTelegram(data) {
+    if(data.checked) {
+        telegram = data.value;
+    }
+}
+
+let way;
+function onCheckWay(data) {
+    if(data.checked) {
+        way = data.value;
+    }
+}
 
 
 function showError(title, text, icon) {
@@ -114,6 +155,9 @@ submit.addEventListener("click", (e) => {
         const element  = document.querySelector(`[name= ${key}]`);
         emptyData(element);
     })
+
+
+    
 
     // institution_name
     if(isNumeric(institution_name.value)) {
@@ -207,7 +251,6 @@ submit.addEventListener("click", (e) => {
         showError("ناموفق" ,"لطفا متن نام شخص اول را به حروف وارد کنید", "error");
         emptyDataColor(first_person_name);
     }
-
     if(isNumeric(second_person_name.value)) {
         showError("ناموفق", "لطفا متن نام شخص دوم را به حروف وارد کنید", "error");
         emptyDataColor(second_person_name);
@@ -218,12 +261,23 @@ submit.addEventListener("click", (e) => {
         showError("ناموفق" ,"لطفا متن شغل شخص اول را به حروف وارد کنید", "error");
         emptyDataColor(first_person_job);
     }
-
-    if(isNumeric(.value)) {
+    if(isNumeric(second_person_job.value)) {
         showError("ناموفق" ,"لطفا متن شغل شخص اول را به حروف وارد کنید", "error");
-        emptyDataColor(first_person_job);
+        emptyDataColor(second_person_address);
     }
 
+    // fisrt and second perosn related
+    if(isNumeric(first_person_relate.value)) {
+        showError("ناموفق" ,"لطفا متن شغل شخص اول را به حروف وارد کنید", "error");
+        emptyDataColor(first_person_relate);
+    }
+    if(isNumeric(second_person_relate.value)) {
+        showError("ناموفق" ,"لطفا متن شغل شخص اول را به حروف وارد کنید", "error");
+        emptyDataColor(second_person_relate);
+    }
+
+    
+    
 
 
     form.submit();
