@@ -9,6 +9,8 @@
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Customized Css -->
+    <link rel="stylesheet" href="style/sweetalert2.min.css">
+
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -32,7 +34,7 @@
     
 
     <!-- Main Container Section -->
-    <form accept="" method="POST" class="container-fluid" id="form">
+    <form action="" method="POST" class="container-fluid" id="form">
 
         <!-- Top Section -->
         <div class="col mt-3 d-flex flex-column justify-content-center align-items-center" id="top">
@@ -243,7 +245,7 @@
                                     <input type="text" name="software" class="form-control m-1 fs-14" placeholder="یکی از نرم افزاهای ویرایش یا اسکن مسنتدات در موبایل را نام ببرید؟">
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <input type="text" name="maromanim" class="form-control m-1 fs-14" placeholder="آیا اپ مردمانیم را براحتی نصب و ثبت نام انجام داده اید؟">
+                                    <input type="text" name="mardomanim" class="form-control m-1 fs-14" placeholder="آیا اپ مردمانیم را براحتی نصب و ثبت نام انجام داده اید؟">
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <input type="text" name="benefactor" class="form-control m-1 fs-14" placeholder="با چند نیکوکار از نزدیک آشنایی دارید؟">
@@ -277,7 +279,7 @@
                                 </div>
                                 
                                 <div class="d-flex justify-content-between">
-                                    <input type="text" class="form-control m-1 fs-14" placeholder="آیا میتوانید حداقل ۱۰ نفر از نیکوکاران را در اپ عضو کنید؟">
+                                    <input type="text" class="form-control m-1 fs-14" name="benefactor_limit" placeholder="آیا میتوانید حداقل ۱۰ نفر از نیکوکاران را در اپ عضو کنید؟">
                                 </div>
                             </div>
                         </div>
@@ -435,6 +437,8 @@
         </div>
     </form>
 
+    <script src="js/sweetalert2.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>
