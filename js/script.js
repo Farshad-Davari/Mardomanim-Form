@@ -202,14 +202,24 @@ submit.addEventListener("click", (e) => {
 
     
     
-     // first_person_name
+     // first and second person name
     if(isNumeric(first_person_name.value)) {
         showError("ناموفق" ,"لطفا متن نام شخص اول را به حروف وارد کنید", "error");
         emptyDataColor(first_person_name);
     }
 
-    // first_person_job
+    if(isNumeric(second_person_name.value)) {
+        showError("ناموفق", "لطفا متن نام شخص دوم را به حروف وارد کنید", "error");
+        emptyDataColor(second_person_name);
+    }
+
+    // first and second person job
     if(isNumeric(first_person_job.value)) {
+        showError("ناموفق" ,"لطفا متن شغل شخص اول را به حروف وارد کنید", "error");
+        emptyDataColor(first_person_job);
+    }
+
+    if(isNumeric(.value)) {
         showError("ناموفق" ,"لطفا متن شغل شخص اول را به حروف وارد کنید", "error");
         emptyDataColor(first_person_job);
     }
