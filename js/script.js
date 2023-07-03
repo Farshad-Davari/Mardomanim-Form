@@ -158,7 +158,7 @@ submit.addEventListener("click", (e) => {
 
 
     
-
+    // String Input Validation
     // institution_name
     if(isNumeric(institution_name.value)) {
         showError("ناموفق" ,"لطفا متن نام موسسه را به حروف وارد کنید", "error");
@@ -274,6 +274,30 @@ submit.addEventListener("click", (e) => {
     if(isNumeric(second_person_relate.value)) {
         showError("ناموفق" ,"لطفا متن شغل شخص اول را به حروف وارد کنید", "error");
         emptyDataColor(second_person_relate);
+    }
+
+    // person_name
+    if(isNumeric(person_name.value)) {
+        showError("ناموفق", "لطفا متن بدینوسیله آقای/خانم را به حروف وارد کنید", "error");
+        emptyDataColor(person_name);
+    }
+
+    // person_info
+    if(isNumeric(person_info.value)) {
+        showError("ناموفق", "لطفا متن با مشخصات فوق بمدت را به حروف وارد کنید", "error");
+        emptyDataColor(person_info);
+    }
+
+    // institution_agent
+    if(isNumeric(institution_agent.value)) {
+        showError("ناموفق", "لطفا متن بعنوان نماینده موسسه را به حروف وارد کنید", "error");
+        emptyDataColor(institution_agent);
+    }
+
+    // this_person
+    if(isNumeric(this_person.value)) {
+        showError("ناموفق", "لطفا متن اینجانب را به حروف وارد کنید", "error");
+        emptyDataColor(this_person);
     }
 
     

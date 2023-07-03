@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 387px) {
+@media only screen and (max-width: 389px) {
     #btn_top {
         width: 130px;
     }
@@ -94,6 +94,15 @@
     }
     #logo-header {
         width: 140px !important;
+    }
+    #desktop-box {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    #mobile-box {
+        display: none !important;
     }
 }
 
@@ -134,4 +143,10 @@
 
 #errors {
     z-index: 1000;
+}
+
+@media only screen and (min-width: 1200px) {
+    #desktop-box {
+        display: inline-table !important;
+    }
 }

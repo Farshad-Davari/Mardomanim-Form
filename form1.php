@@ -36,7 +36,7 @@
     <!-- Main Container Section -->
     <form action="" method="POST" class="container-fluid" id="form">
 
-        <!-- Top Section -->
+        <!-- Title Section -->
         <div class="col mt-3 d-flex flex-column justify-content-center align-items-center" id="top">
             <h1 class="c-font fs-18 fw-bold main-color">فرم معتمدین مردمانیم</h1>
             <h3 class="c-font fs-14 main-color">نسخه ۱.۶- ۱۴۰۰/۰۵/۱۰</h3>
@@ -45,11 +45,10 @@
 
         
 
-        <!-- Form Section -->
-        <div class="container-fluid mx-xl-0 mx-auto p-0 m-0 col-xl-12 col-md-10" id="form-container">
+        <!-- Form Section 1 -->
+        <div class="mx-xl-0 mx-auto p-0 m-0 col-xl-12 col-md-10" id="form-container">
             <table class="table table-light p-0 m-0 flex-lg-row flex-xl-row flex-column col-lg-12 c-font table-responsive" style="direction: rtl;">
                 <tbody class="main-color">
-
                   <!-- institution info -->
                   <tr class="d-flex flex-xl-nowrap flex-lg-nowrap flex-wrap">
                     <th scope="row" colspan="0" class="vertic-align col-xl-2 p-4 th-width th-cus">مشخصات موسسه</th>
@@ -180,7 +179,7 @@
                             </div>
                             <div class="col-xl-12 d-flex flex-column border-bottom pb-3">
                                 <div class="d-flex flex-sm-row flex-lg-row flex-md-row col-12 my-3 flex-xl-row flex-lg-nowrap flex-wrap justify-content-start flex-column">
-                                    <div class="d-flex col-12 my-3 flex-row justify-content-start">
+                                    <div class="d-flex col-12 my-3 flex-column flex-sm-row justify-content-start">
                                     <p class="">میزان آشنایی با اینترنت وب</p>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="web" id="flexRadioDefault1" value="professional" onclick="onCheckWeb(this)">
@@ -203,7 +202,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex flex-sm-row flex-lg-row flex-md-row col-12 my-3 flex-xl-row flex-lg-nowrap flex-wrap justify-content-start flex-column">
-                                    <div class="d-flex col-12 my-3 flex-row justify-content-start">
+                                    <div class="d-flex col-12 my-3 flex-sm-row flex-column justify-content-start">
                                     <p class="">میزان آشنایی با اندروید/IOS</p>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="android" id="flexRadioDefault1" value="professional" onclick="onCheckAndroid(this)">
@@ -225,9 +224,8 @@
                                     </div>
                                     </div>
                                 </div>
-
                                 <div class="d-flex flex-sm-row flex-lg-row flex-md-row col-12 my-3 flex-xl-row flex-lg-nowrap flex-wrap justify-content-start flex-column">
-                                    <div class="d-flex col-12 my-3 flex-row justify-content-start">
+                                    <div class="d-flex col-12 my-3 flex-sm-row flex-column justify-content-start">
                                     <p class="">میزان آشنایی با واتس آپ/تلگرام</p>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="whatsapp" id="flexRadioDefault1" value="professional" onclick="onCheckTelegram(this)">
@@ -262,7 +260,7 @@
                                 </div>
                         
                                 <div class="d-flex flex-sm-row flex-lg-row flex-md-row col-12 my-3 flex-xl-row flex-lg-nowrap flex-wrap justify-content-start flex-column">
-                                <div class="d-flex col-12 my-3 flex-row justify-content-start">
+                                <div class="d-flex col-12 my-3 flex-sm-row flex-column justify-content-start">
                                     <p class="">راه ارتباطی با آنان چیست؟</p>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="connection" id="flexRadioDefault1" value="Whatsapp" onclick="onCheckWay(this)">
@@ -331,74 +329,80 @@
 
                 </tbody>
             </table>
+        </div>
 
-            
+        <!-- Form Section 2 -->
+        <div class="mx-xl-0 mx-auto p-0 m-0 col-xl-12 col-md-10 d-flex flex-column">
+                <!-- Desktop view  -->
+                <div class="col-md-12" id="desktop-box">
+                    <div class="col-12 text-end m-0 p-0" style="background-color: #BFBFBF;">
+                        <p class="text-black m-0 c-font fs-14 p-1" dir="rtl">نام دو نفر از معرفینی که شما را کاملا میشناسند اعلام نمایید.</p>
+                    </div>
+                    <table class="table table-striped col-12 c-font " style="direction: rtl;">
+                        <thead class="main-color  text-center" >
+                            <tr >
+                                <th class="th-width2">نام شخص</th>
+                                <th class="th-width2">تلفن همراه</th>
+                                <th class="th-width2">شغل</th>
+                                <th class="th-width2">نشانی</th>
+                                <th class="th-width2">نسبت با شما</th>
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <textarea name="first_person_name" id="first_person_name" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="second_person_name" id="second_person_name" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <textarea name="first_person_phone" id="first_person_phone" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="second_person_phone" id="second_person_phone" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <textarea name="first_person_job" id="first_person_job" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="second_person_job" id="second_person_job" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <textarea name="first_person_address" id="first_person_address" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="second_person_address" id="second_person_address" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <textarea name="first_person_relate" id="first_person_relate" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="second_person_relate" id="second_person_relate" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-            <div class="col-12 w-100 text-end m-0 p-0" style="background-color: #BFBFBF;">
-                <p class="text-black m-0 c-font fs-14 p-1" dir="rtl">نام دو نفر از معرفینی که شما را کاملا میشناسند اعلام نمایید.</p>
-            </div>
-            <div class="row w-100">
-                <table class="table table-striped w-100 col-12 d-none d-sm-block c-font " style="direction: rtl;">
-                    <thead class="main-color  text-center" >
-                        <tr >
-                            <th class="th-width2">نام شخص</th>
-                            <th class="th-width2">تلفن همراه</th>
-                            <th class="th-width2">شغل</th>
-                            <th class="th-width2">نشانی</th>
-                            <th class="th-width2">نسبت با شما</th>
-                        </tr>
-                    </thead>
-                    <tbody class="">
-                        <tr>
-                            <td>
-                                <div class="form-group">
-                                    <textarea name="first_person_name" id="first_person_name" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="second_person_name" id="second_person_name" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-group">
-                                    <textarea name="first_person_phone" id="first_person_phone" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="second_person_phone" id="second_person_phone" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-group">
-                                    <textarea name="first_person_job" id="first_person_job" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="second_person_job" id="second_person_job" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-group">
-                                    <textarea name="first_person_address" id="first_person_address" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="second_person_address" id="second_person_address" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-group">
-                                    <textarea name="first_person_relate" id="first_person_relate" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="second_person_relate" id="second_person_relate" class="form-control rounded mt-2" cols="20" rows="3"></textarea>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="d-flex flex-column" dir="rtl">
+                <!-- Mobile View  -->
+                <div class="col-12 flex-column" id="mobile-box" dir="rtl">
+                    <div class="col-12 text-end m-0 p-0" style="background-color: #BFBFBF;">
+                        <p class="text-black m-0 c-font fs-14 p-1" dir="rtl">نام دو نفر از معرفینی که شما را کاملا میشناسند اعلام نمایید.</p>
+                    </div>
                     <!-- Emergency and job -->
                     <div class="d-flex col-12 col-xl-12 flex-wrap c-font flex-xl-nowrap flex-row justify-content-start">
-                        <input type="text" name="first_person_name" id="first_person_name" class="form-control m-1 fs-14  d-sm-none col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12" placeholder="نام شخص اول">
+                        <input type="text" name="first_person_name" id="first_person_name fpn" class="form-control m-1 fs-14 d-sm-none col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12" placeholder="نام شخص اول">
                         <input type="text" name="first_person_phone" id="first_person_phone" class="form-control m-1 d-sm-none fs-14 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12" placeholder="تلفن همراه شخص اول">
                         <input type="text" name="first_person_address" id="first_person_address" class="form-control m-1 d-sm-none fs-14 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12" placeholder="نشانی شخص اول">
                         <input type="text" name="first_person_job" id="first_person_job" class="form-control m-1 d-sm-none fs-14 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12" placeholder="شغل شخص اول">
@@ -411,49 +415,56 @@
                         <input type="text" name="second_person_job" id="second_person_job" class="form-control m-1 d-sm-none fs-14 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12" placeholder="شغل شخص دوم">
                         <input type="text" name="second_person_relate" id="second_person_relate" class="form-control m-1 d-sm-none fs-14 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12" placeholder="نسبت شخص دوم با شما">
                     </div>
-            </div>
+                </div>
 
-            <!-- Description Section -->
-            <div class="col-12 d-flex flex-row  c-font align-items-center flex-wrap fs-14 mt-5 mt-lg-0 mt-xl-0 mt-md-0 mt-sm-0" dir="rtl">
-                <span>بدینوسیله آقای/خانم</span>
-                <div class="d-flex flex-row">
-                    <input type="text" name="person_name" id="person_name" class="form-control m-1 fs-14">              
-                </div>
-                <span>با مشخصات فوق بمدت</span>
-                <div class="d-flex flex-row">
-                    <input type="text" name="person_info" id="person_info" class="form-control m-1 fs-14">              
-                </div>
-                <span>ماه بعنوان نماینده موسسه</span>
-                <div class="d-flex flex-row">
-                    <input type="text" name="institution_agent" id="institution_agent" class="form-control m-1 fs-14">              
-                </div>
-                <span>معرفی شده و فعالیتهای ایشان در سامانه مردمانیم تحت نظارت</span>
-                <span class="mt-2"> و مسولیت آن تماما به عده این موسسه خواهد بود.</span>
-            </div>
+                <!-- Description Section -->
+                <div class="col-12 d-flex flex-column">
+                    <!-- Desc 1 -->
+                    <div class="col-12 d-flex flex-row c-font align-items-center flex-wrap fs-14 mt-5 mt-lg-0 mt-xl-0 mt-md-0 mt-sm-0" dir="rtl">
+                        <span>بدینوسیله آقای/خانم</span>
+                        <div class="d-flex flex-row">
+                            <input type="text" name="person_name" id="person_name" class="form-control m-1 fs-14">              
+                        </div>
+                        <span>با مشخصات فوق بمدت</span>
+                        <div class="d-flex flex-row">
+                            <input type="text" name="person_info" id="person_info" class="form-control m-1 fs-14">              
+                        </div>
+                        <span>ماه بعنوان نماینده موسسه</span>
+                        <div class="d-flex flex-row">
+                            <input type="text" name="institution_agent" id="institution_agent" class="form-control m-1 fs-14">              
+                        </div>
+                        <span>معرفی شده و فعالیتهای ایشان در سامانه مردمانیم تحت نظارت</span>
+                        <span class="mt-2"> و مسولیت آن تماما به عده این موسسه خواهد بود.</span>
+                    </div>
 
-            <!-- Description 2 Section -->
-            <div class="col-12 d-flex flex-row mt-4 c-font align-items-center flex-wrap fs-14" dir="rtl">
-                <span>اینجانب</span>
-                <div class="d-flex flex-row">
-                    <input type="text" name="this_person" id="this_person" class="form-control m-1 fs-14">              
+                    <!-- Desc 2 -->
+                    <div class="col-12 d-flex flex-row mt-4 c-font align-items-center flex-wrap fs-14" dir="rtl">
+                        <span>اینجانب</span>
+                        <div class="d-flex flex-row">
+                            <input type="text" name="this_person" id="this_person" class="form-control m-1 fs-14">              
+                        </div>
+                        <span>در تاریخ</span>
+                        <div class="d-flex flex-row">
+                            <input type="text"  name="in_date" id="in_date" class="form-control m-1 fs-14">              
+                        </div>
+                        <span>با درستی و دقت کامل به سوالات این پرسشنامه پاسخ گفتم</span>
+                        <span> و نسبت به صحت پاسخهای داده شده خود را مسول میدانم.</span>
+                        <span>ضمنا تمامی شرایط همکاری با مردمانیم</span>
+                        <p>
+                            <span>را مطالعه کرده و آنها را قبول دارم.</span>
+                            <span>معرفی شده و فعالیتهای ایشان در سامانه مردمانیم تحت نظارت</span>
+                            <span class="mt-2"> و مسولیت آن تماما به عده این موسسه خواهد بود.</span>
+                        </p>
+                    </div>
                 </div>
-                <span>در تاریخ</span>
-                <div class="d-flex flex-row">
-                    <input type="text"  name="in_date" id="in_date" class="form-control m-1 fs-14">              
+                
+                
+                <!-- Submit Form -->
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="btn btn-primary mx-auto c-font fs-18 px-4 py-2" id="submit_form">ارسال</button>
                 </div>
-                <span>با درستی و دقت کامل به سوالات این پرسشنامه پاسخ گفتم</span>
-                <span> و نسبت به صحت پاسخهای داده شده خود را مسول میدانم.</span>
-                <span>ضمنا تمامی شرایط همکاری با مردمانیم</span>
-                <p>
-                    <span>را مطالعه کرده و آنها را قبول دارم.</span>
-                    <span>معرفی شده و فعالیتهای ایشان در سامانه مردمانیم تحت نظارت</span>
-                    <span class="mt-2"> و مسولیت آن تماما به عده این موسسه خواهد بود.</span>
-                </p>
-            </div>
         </div>
-        <div class="col-12 d-flex justify-content-center">
-            <button class="btn btn-primary mx-auto c-font fs-18 px-4 py-2" id="submit_form">ارسال</button>
-        </div>
+
     </form>
 
     <script src="js/sweetalert2.min.js"></script>
