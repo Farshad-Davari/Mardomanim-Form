@@ -56,8 +56,8 @@
                         <div class="col-xl-4 col-lg-8 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center">
                             <input type="text" name="institution_name" class="form-control m-1 col-3 fs-14 col-lg-12 col-md-12 col-sm-12 col-12" id="institution_name" placeholder="نام موسسه">
                             <input type="text" name="institution_website" class="form-control m-1 fs-14 col-3 col-lg-12 col-md-12 col-sm-12 col-12" id="institution_website" placeholder="وب سایت موسسه">
-                            <input type="text" name="license_number" class="form-control m-1 fs-14 col-3 col-lg-12 col-md-12 col-sm-12 col-12" id="license_number" placeholder="شماره و مرجع مجوز">
-                            <input type="text" name="issue_date" class="form-control m-1 fs-14 col-3 col-lg-12 col-md-12 col-sm-12 col-12" id="issue_date" placeholder="تاریخ صدور">
+                            <input type="text" name="license_number" class="form-control m-1 fs-14 col-3 col-lg-12 col-md-12 col-sm-12 col-12" id="license_number" placeholder="شماره و مرجع مجوز">  
+                            <input type="date" name="issue_date" class="form-control date m-1 fs-14 col-3 col-lg-12 col-md-12 col-sm-12 col-12" id="issue_date" placeholder="تاریخ صدور">
                         </div>
                     </td>
                     <td class="col-xl-6 col-12 col-6 col-lg-6">
@@ -445,7 +445,7 @@
                         </div>
                         <span>در تاریخ</span>
                         <div class="d-flex flex-row">
-                            <input type="text"  name="in_date" id="in_date" class="form-control m-1 fs-14">              
+                            <input type="date"  name="in_date" id="in_date" class="form-control m-1 fs-14">              
                         </div>
                         <span>با درستی و دقت کامل به سوالات این پرسشنامه پاسخ گفتم</span>
                         <span> و نسبت به صحت پاسخهای داده شده خود را مسول میدانم.</span>
@@ -466,7 +466,7 @@
         </div>
 
     </form>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/script.js"></script>
 

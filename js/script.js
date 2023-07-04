@@ -108,7 +108,6 @@ function onCheckWay(data) {
     }
 }
 
-
 function showError(title, text, icon) {
     const Toast = Swal.mixin({
         toast: true,
@@ -156,8 +155,8 @@ submit.addEventListener("click", (e) => {
         emptyData(element);
     })
 
+    let cond = flase;
 
-    
     // String Input Validation
     // institution_name
     if(isNumeric(institution_name.value)) {
@@ -300,11 +299,114 @@ submit.addEventListener("click", (e) => {
         emptyDataColor(this_person);
     }
 
-    
-    
+    // Integer Input Validation
+    // license_number
+    if(!isNumeric(license_number.value)) {
+        showError("ناموفق", "لطفا متن شماره و مرجع مجوز را به عدد وارد کنید", "error");
+        emptyDataColor(license_number);
+    }
 
+    // meli_code
+    if(!isNumeric(meli_code.value)) {
+        showError("ناموفق", "لطفا متن کد ملی را به عدد وارد کنید", "error");
+        emptyDataColor(meli_code);
+    }
 
-    form.submit();
+    // phone_number
+    if(!isNumeric(phone_number.value)) {
+        showError("ناموفق", "لطفا متن تلفن همراه را به عدد وارد کنید", "error");
+        emptyDataColor(phone_number);
+    }
+
+    // institution_landline
+    if(!isNumeric(institution_landline.value)) {
+        showError("ناموفق", "لطفا متن تلفن ثابت موسسه یا کد را به عدد وارد کنید", "error");
+        emptyDataColor(institution_landline);
+    }
+
+    // day
+    if(!isNumeric(day.value)) {
+        showError("ناموفق", "لطفا متن روز را به عدد وارد کنید", "error");
+        emptyDataColor(day);
+    }
+    
+    // month
+    if(!isNumeric(month.value)) {
+        showError("ناموفق", "لطفا متن ماه را به عدد وارد کنید", "error");
+        emptyDataColor(month);
+    }
+
+    // year
+    if(!isNumeric(year.value)) {
+        showError("ناموفق", "لطفا متن سال را به عدد وارد کنید", "error");
+        emptyDataColor(year);
+    }
+
+    // meli_code_second
+    if(!isNumeric(meli_code_second.value)) {
+        showError("ناموفق", "لطفا متن کد ملی نماینده را به عدد وارد کنید", "error");
+        emptyDataColor(meli_code_second);
+    }
+
+    // child_numbers
+    if(!isNumeric(child_numbers.value)) {
+        showError("ناموفق", "لطفا متن تعداد فرزندان را به عدد وارد کنید", "error");
+        emptyDataColor(child_numbers);
+    }
+
+    // phone_number_second
+    if(!isNumeric(phone_number_second.value)) {
+        showError("ناموفق", "لطفا متن تلفن همراه نماینده را به عدد وارد کنید", "error");
+        emptyDataColor(phone_number_second);
+    }
+
+    // whatsapp_number
+    if(!isNumeric(whatsapp_number.value)) {
+        showError("ناموفق", "لطفا متن شماره واتس آپ را به عدد وارد کنید", "error");
+        emptyDataColor(whatsapp_number);
+    }
+
+    // emergency_number
+    if(!isNumeric(emergency_number.value)) {
+        showError("ناموفق", "لطفا متن تلفن یکی از بستگان را به عدد وارد کنید", "error");
+        emptyDataColor(emergency_number);
+    }
+
+    // month_income
+    if(!isNumeric(month_income.value)) {
+        showError("ناموفق", "لطفا متن میزان درآمد ماهیانه را به عدد وارد کنید", "error");
+        emptyDataColor(month_income);
+    }
+
+    // agent_phone
+    if(!isNumeric(agent_phone.value)) {
+        showError("ناموفق", "لطفا متن تلفن محل سکونت با کد را به عدد وارد کنید", "error");
+        emptyDataColor(agent_phone);
+    }
+
+    // first and second phone phone
+    if(!isNumeric(first_person_phone.value)) {
+        showError("ناموفق", "لطفا متن تلفن همراه شخص اول را به عدد وارد کنید", "error");
+        emptyDataColor(first_person_phone);
+    }
+
+    if(!isNumeric(second_person_phone.value)) {
+        showError("ناموفق", "لطفا متن تلفن همراه شخص دوم را به عدد وارد کنید", "error");
+        emptyDataColor(second_person_phone);
+    }
+
+    // URL regex
+    let expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+    let regex = new RegExp(expression);
+    const myUrl = institution_website.value;
+    if(!(myUrl.match(regex))) {
+        showError("ناموفق", "لطفا وبسایت خود را به درستی وارد نمایید", "error");
+    }
+    
+    // Delaying in submit form
+    setTimeout(() => {
+        form.submit();    
+    }, 3500)
 })
 
   
